@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <script type="text/javascript">
+		function eventFunctionTest(){
+		alert("充值成功，马上到账！");
+		}
+  </script>
+  <style>
+   p{
+		border-bottom:1xp dashed #FF3300
+   }
+   body {
+       background:url(images/formbg1.jpg) no-repeat;
+   	   background-size:cover;
+   }
+  </style>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+
+  <h2>即将进行充值，请稍后...</h2>
+  <form name="form1" action="register.jsp" method="post">
+  姓名：<input type="text" name="username"><br/> &nbsp<br/>
+  学工号:<input type="text" name="number" size="12"><br/>&nbsp<br/>
+  校园卡号：<input type="text" name="telnumber" size="12"><br/>	  &nbsp<br/>
+  <p>
+	<font color="red">温馨提示：向校园卡转账成功后所转金额将显示在过渡余额中，在餐厅等处的卡机上进行刷卡操作后，过渡余额即会转入校园卡。单笔转账最大限额500 元！
+	</p></font>
+	转账方式：<select name="type"><br/>
+				<option value="xiaoyuanka">校园卡转账 <br/>
+				<option value="yinhanka">银行卡转账	 <br/>
+				<option value="zhifubao">支付宝转账	 <br/>
+				</select> <br/>	&nbsp<br/>
+	
+	转账金额：<input type="text" name="telnumber" size="20"><font color="red">RMB(单笔转账最大金额为500)</font><br/>  &nbsp<br/>
+	查询密码：	<input type="password" name="telnumber" size="20"> <font color="red">*(校园卡查询密码)</font><br/>	&nbsp<br/>
+	验证码：<input type="text" name="telnumber" size="10"> <font color="red">*(输入如下验证码)</font><br/>  &nbsp<br/>
+	 &nbsp	&nbsp &nbsp &nbsp  &nbsp  &nbsp <font size="2">看不清楚，换一张</font><br/>
+	<input type="checkbox" name="dagou" value="tongyi"><font size="2">我已阅读并接受支付服务条款</font><br/>	 &nbsp<br/>
+
+	<input type="submit" value="立即转账" onClick="eventFunctionTest();">
+	<input type="submit" value="重置">
+	<input type="hidden"  name="invest" value="invest"><br/>
+	&nbsp<br/>
+	<h5><a href="begin.html">点击返回上一页面</a></h5>
+ </BODY>
+</HTML>

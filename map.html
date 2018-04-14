@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  <p id="demo">单击按钮获取你的位置信息</p>
+  <button onclick="getLocation()">获取你的位置信息</button>
+  
+  <script>
+	var x=document.getElementById("demo");
+	function getLocation()
+	{
+		if (navigator.geolocation)
+		{
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+		else{x.innerHTML="你的浏览器不支持Geolocation API。";}
+	}
+	function showPosotion(position)
+	{
+		x.innerHTML="纬度：" + position.coords.longitude;
+	}
+
+  </script>
+  &nbsp<br/>
+	<a href="begin.html"><h5>点击返回上一页</h5></a> 
+	
+	
+
+ </BODY>
+</HTML>
